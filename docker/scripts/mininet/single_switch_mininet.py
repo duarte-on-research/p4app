@@ -57,7 +57,7 @@ class SingleSwitchTopo(Topo):
         Topo.__init__(self, **opts)
 
         switch = self.addSwitch('s1',
-                                sw_path = sw_path,
+                sw_path = 'gdbserver 0.0.0.0:1234 ' + sw_path,
                                 json_path = json_path,
                                 log_console = True,
                                 log_file = log_file,

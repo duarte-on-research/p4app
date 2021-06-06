@@ -17,6 +17,18 @@ Installation
     cp p4app /usr/local/bin
     ```
 
+3. If you want to enable switch program debugging, build the image:
+
+    ```
+    make docker.build
+    ```
+
+and set the image:
+
+    ```
+    export P4APP_IMAGE=pedroarthur/p4app:latest
+    ```
+
 That's it! You're done.
 
 Usage
